@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Processing Addendum — ClockCard & Eventa</title>
+<style>
+  body {
+    font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    color: #2c3e50;
+    background-color: #f8fafc;
+  }
+  .container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  }
+  h1 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  .meta {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 16px;
+  }
+  h2 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #64748b;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Data Processing Addendum</h1>
+  <div class="meta">
+    <strong>Version 1.0</strong> &nbsp;|&nbsp; August 21, 2026<br>
+    Last updated: August 21, 2026
+  </div>
+
+  <p>This Data Processing Addendum ("DPA") forms part of the Terms of Service governing your use of the ClockCard and Eventa mobile applications (the "Service") provided by KOSD ("Processor"). This DPA reflects the parties' agreement with regard to the Processing of Personal Data as defined under the GDPR and other applicable data protection laws.</p>
+
+  <h2>1. Definitions</h2>
+  <ul>
+    <li><strong>1.1 "Controller"</strong> means the organization that determines the purposes and means of Processing Personal Data (i.e., your organization).</li>
+    <li><strong>1.2 "Processor"</strong> means KOSD, which Processes Personal Data on behalf of the Controller.</li>
+    <li><strong>1.3 "Personal Data"</strong> means any information relating to an identified or identifiable natural person, including names, email addresses, location data, and attendance records.</li>
+    <li><strong>1.4 "Processing"</strong> means any operation performed on Personal Data, such as collection, recording, storage, retrieval, use, disclosure, and deletion.</li>
+    <li><strong>1.5 "Subprocessor"</strong> means any third party engaged by the Processor to assist in Processing Personal Data.</li>
+  </ul>
+
+  <h2>2. Scope and Roles</h2>
+  <ul>
+    <li><strong>2.1</strong> The Controller is the organization using the Service to manage attendance. The Processor acts on the Controller's instructions as documented in the Service configuration (e.g., data retention settings, location verification toggles).</li>
+    <li><strong>2.2</strong> The categories of Personal Data Processed include: member names, email addresses, check-in/out timestamps, attendance status, GPS coordinates at check-in/out (if enabled), and consent records.</li>
+    <li><strong>2.3</strong> The purposes of Processing are limited to providing the Service: authentication, attendance recording, location verification, reporting, and account management.</li>
+  </ul>
+
+  <h2>3. Processor Obligations</h2>
+  <ul>
+    <li><strong>3.1</strong> The Processor shall Process Personal Data only on documented instructions from the Controller, including with regard to transfers of Personal Data to a third country.</li>
+    <li><strong>3.2</strong> The Processor shall ensure that persons authorized to Process Personal Data have committed themselves to confidentiality.</li>
+    <li><strong>3.3</strong> The Processor shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including:
+      <ul>
+        <li>Encryption of Personal Data in transit (TLS 1.2+) and at rest.</li>
+        <li>Row-level security policies restricting data access to the Controller's organization.</li>
+        <li>Hashed passwords (bcrypt) managed by the authentication provider.</li>
+        <li>Biometric authentication as a local device gate; biometric data never leaves the device.</li>
+      </ul>
+    </li>
+    <li><strong>3.4</strong> The Processor shall not engage a Subprocessor without the Controller's prior authorization. The current list of Subprocessors is available in the Subprocessor Disclosure.</li>
+    <li><strong>3.5</strong> The Processor shall assist the Controller in responding to data subject requests (access, rectification, erasure, portability) via in-app features (Edit Profile, Delete Account, Export Data).</li>
+    <li><strong>3.6</strong> The Processor shall notify the Controller without undue delay upon becoming aware of a Personal Data breach affecting the Controller's data.</li>
+  </ul>
+
+  <h2>4. Data Retention and Deletion</h2>
+  <ul>
+    <li><strong>4.1</strong> Personal Data is retained according to the Controller's data retention setting (default: 365 days).</li>
+    <li><strong>4.2</strong> Upon account deletion by a data subject, the Processor shall permanently delete all associated Personal Data (profile, attendance records, consent records, organization memberships) within 30 days.</li>
+    <li><strong>4.3</strong> Upon termination of the Service by the Controller, the Processor shall delete all Personal Data associated with the Controller's organization within 90 days, unless retention is required by law.</li>
+  </ul>
+
+  <h2>5. Audit and Compliance</h2>
+  <ul>
+    <li><strong>5.1</strong> The Processor shall make available to the Controller information necessary to demonstrate compliance with this DPA.</li>
+    <li><strong>5.2</strong> The Controller may audit the Processor's compliance with this DPA upon reasonable notice, subject to confidentiality obligations.</li>
+  </ul>
+
+  <h2>6. Changes to This DPA</h2>
+  <p>We may update this DPA from time to time to reflect changes in legal requirements or our processing practices. We will notify Controllers of material changes via the app or email.</p>
+
+  <h2>7. Contact</h2>
+  <p>For questions about this DPA, contact: <a href="mailto:admin@kosdllp.com">admin@kosdllp.com</a></p>
+
+  <footer>
+    KOSD &mdash; ClockCard & Eventa Data Processing Addendum
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subprocessor Disclosure — ClockCard & Eventa</title>
+<style>
+  body {
+    font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    color: #2c3e50;
+    background-color: #f8fafc;
+  }
+  .container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  }
+  h1 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  .meta {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 16px;
+  }
+  h2 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  h3 {
+    color: #1e293b;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #64748b;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Subprocessor Disclosure</h1>
+  <div class="meta">
+    <strong>Version 1.0</strong> &nbsp;|&nbsp; August 21, 2026<br>
+    Last updated: August 21, 2026
+  </div>
+
+  <p>This Subprocessor Disclosure lists the third-party service providers that KOSD uses to process Personal Data in connection with the ClockCard and Eventa mobile applications (the "Service"). We engage subprocessors only under data processing agreements that require confidentiality and appropriate security measures.</p>
+
+  <h2>1. Current Subprocessors</h2>
+
+  <h3>1.1 Supabase (supabase.com)</h3>
+  <ul>
+    <li><strong>Role:</strong> Database hosting, authentication, and file storage</li>
+    <li><strong>Data processed:</strong> Email addresses, hashed passwords, names, attendance records, location data, consent records, organization data</li>
+    <li><strong>Location:</strong> Cloud-hosted; region selected by the Controller during project setup</li>
+    <li><strong>Security:</strong> TLS encryption in transit, encryption at rest, row-level security policies</li>
+    <li><strong>Website:</strong> <a href="https://supabase.com/security" target="_blank">https://supabase.com/security</a></li>
+  </ul>
+
+  <h3>1.2 Resend (resend.com)</h3>
+  <ul>
+    <li><strong>Role:</strong> Transactional email delivery (signup confirmations, kiosk OTP codes, password reset emails)</li>
+    <li><strong>Data processed:</strong> Email addresses, one-time codes, confirmation tokens</li>
+    <li><strong>Location:</strong> United States</li>
+    <li><strong>Security:</strong> TLS encryption, API-key authenticated, SOC 2 Type II compliant</li>
+    <li><strong>Website:</strong> <a href="https://resend.com/security" target="_blank">https://resend.com/security</a></li>
+  </ul>
+
+  <h3>1.3 Apple App Store / Google Play Store</h3>
+  <ul>
+    <li><strong>Role:</strong> In-app purchase billing and subscription management</li>
+    <li><strong>Data processed:</strong> Purchase transactions, subscription status, billing information (managed entirely by Apple/Google)</li>
+    <li><strong>Location:</strong> Apple/Google infrastructure</li>
+    <li><strong>Security:</strong> Governed by Apple's and Google's respective security and privacy frameworks</li>
+    <li><strong>Websites:</strong> <a href="https://www.apple.com/legal/privacy" target="_blank">Apple Privacy</a> | <a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></li>
+  </ul>
+
+  <h2>2. Data Not Shared with Subprocessors</h2>
+  <p>The following data is never sent to any subprocessor:</p>
+  <ul>
+    <li>Biometric data (Face ID / Touch ID remains on the device)</li>
+    <li>Device contacts, photos, camera, or microphone data</li>
+    <li>Continuous location tracking (only point-in-time GPS at check-in/out, if enabled)</li>
+  </ul>
+
+  <h2>3. Subprocessor Changes</h2>
+  <p>We will update this disclosure whenever we add, replace, or remove a subprocessor. Controllers will be notified of material changes via the app or email at least 30 days before a new subprocessor begins processing Personal Data, giving the Controller the opportunity to object.</p>
+
+  <h2>4. Subprocessor Security Requirements</h2>
+  <p>Each subprocessor must:</p>
+  <ul>
+    <li>Enter into a data processing agreement with KOSD that includes GDPR-compliant terms</li>
+    <li>Maintain appropriate technical and organizational security measures</li>
+    <li>Not process Personal Data for any purpose other than providing the contracted service</li>
+    <li>Delete or return Personal Data upon termination of the service</li>
+  </ul>
+
+  <h2>5. Contact</h2>
+  <p>For questions about subprocessors, contact: <a href="mailto:admin@kosdllp.com">admin@kosdllp.com</a></p>
+
+  <footer>
+    KOSD &mdash; ClockCard & Eventa Subprocessor Disclosure
+  </footer>
+</div>
+</body>
+</html>
